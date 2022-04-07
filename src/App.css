@@ -1,38 +1,146 @@
 .App {
+  padding: 30px;
+  color: white;
+  background: rgb(1,8,6);
+background: radial-gradient(circle, rgba(1,8,6,1) 59%, rgba(144,139,139,1) 100%);
+}
+
+.headshot{
+  height: 500px;
+  width: 370px;
+  border-radius: 10px;
+  box-shadow: rgba(245, 177, 220, 0.548) 5px 5px, rgba(236, 76, 178, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  margin-left: 10vw;
+}
+
+.nav{
+  
+  display: flex;
+  justify-content: center;
+  
+}
+
+.connect{
+  text-align: center;
+  margin-top: 70px;
+}
+.projects{
+  text-align: center;
+  margin-top: 70px;
+
+}
+
+.title{
+  color: rgb(247, 242, 247);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.name{
+  color: rgb(248, 187, 245);
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.firstname{
+  color: rgb(250, 250, 250);
+  margin-left: 5vw;
+  font-size: 175px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header{
+  color: rgb(120, 243, 216);
+  margin-top: 20vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slogan{
+  color: rgb(248, 187, 245);
+  margin-left: 5vw;
+  margin-top: 0;
+  margin-bottom: 300px;
+}
+
+li{
+  list-style: none;
+  padding: 10px;
+}
+
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.first-column {
+  width: 33%;
+  padding: 0 10px 0 0;
+  float: left;
+}
+.second-column {
+  width:66%;
+    padding: 0 10px 0 0;
+    float: right;
+    margin-left: 5vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h4 {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid rgb(120, 243, 216); 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+} 
+
+h4 span { 
+   background:rgb(8, 8, 8); 
+   padding:0 10px; 
+}
+
+.image{
+  margin-right: 0;
+}
+
+.icon{
+  height: 40px;
+  width: 40px;
+}
+
+.icontwo{
+  background-color: rgba(238, 231, 231, 0.589);
+  border-radius: 5px;
+}
+
+ul {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.iconconnect{
+  padding: 5px;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.iconconnect:hover{
+  padding: 5px;
+  margin: 10px;
+  height: 60px;
+  width: 60px;
+  transition: 0.5s;
+}
+
+.projectsicon{
+  width: 250px;
+  height: 175px;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.projectsicon:hover{
+  width: 300px;
+  height: 225px;
+  border-radius: 100px;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
 }

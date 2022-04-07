@@ -10,14 +10,15 @@ function App() {
   return (
     <div className="App">
         <Nav/>
-        <h3> Hello World, my name is</h3>
-     <h1> Denee Boyd. </h1>
-     <h2> I build things for the web.</h2>
+        <h3 className='header'> Hello World, my name is</h3>
+     <h1 className='firstname'> Denee Boyd </h1>
+     <h2 className='slogan'> I build things for the web.</h2>
      
     
      <About/>
      <Project/>
      <Connect/>
+      <p>Built with React || Hosted on Netlify</p>
       
     </div>
   );
