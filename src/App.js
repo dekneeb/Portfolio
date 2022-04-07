@@ -8,7 +8,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id='home'>
         <Nav/>
         <h3 className='header'> Hello World, my name is</h3>
      <h1 className='firstname'> Denee Boyd </h1>
