@@ -35,7 +35,8 @@ const Project = () =>{
                 <div className='overlay'>
                     <div className='description'>Tech Stack: Django, PostreSQL, Python, AWS, Bootstrap</div>
                     <div className='words'>Niche resale website for weddings. Users can comment and direct/private message for exchange of items.</div>
-                    <span><FiIcons.FiGithub/><BsIcons.BsGlobe/></span>
+                    <span><a href='https://github.com/dekneeb/IDoTwo'><FiIcons.FiGithub/></a>
+                    <a href='https://i-do-two.herokuapp.com/'><BsIcons.BsGlobe/></a></span>
                     
 
                 </div>
