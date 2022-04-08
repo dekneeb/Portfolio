@@ -12,7 +12,7 @@ const About = () =>{
             </div>
             <div className='second-column'>
             <p className='paragraph'> Hello! My name is Denee (Den-ay), I'm glad you've found my portfolio. The genesis of my web development interests could be accredited to 2006 coding html for my MySpace profile, however more accurately I recently completed an Immersive Software Engineering course with General Assembly.  Presently I'm seeking a work place that will challenge my current skill set, and foster an environment of learning and growth. I gravitate towards backend engineering, but am capable of full stack development. </p>
-            <p>Here are a few languages and frameworks I've worked with recently:
+            <p className='paragraph'>A few languages and frameworks I've worked with recently:
                 <ul>
                     <li><img className='icon'src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 </li>
