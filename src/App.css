@@ -258,9 +258,30 @@ h3{
 }
 
 @media screen and (max-width: 500px) {
-  .headshot {
-      width: 200px !important;
-      height: 200px !important;
+  
 
+  .paragraph{
+    background-color: rgba(0, 0, 0, 0.514);
   }
+  ul {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .thumbnail{
+    margin-top: 10px;
+  }
+
+  .firstname{
+    font-size: 70px;
+  }
+
+  .slogan{
+    font-size: 40px;
+  }
+
+  
 }
