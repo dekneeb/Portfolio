@@ -189,6 +189,14 @@ h3{
 
 }
 
+.nav-about:hover{
+  background-color: rgba(120, 243, 216, 0.678);
+  padding: 3px;
+  transition: 0.25s;
+  border-radius: 3px;
+
+}
+
 .projcontainer{
   display: flex;
   justify-content: space-evenly;
