@@ -1,8 +1,12 @@
 .App {
-  padding: 30px;
+  
   color: white;
   background: rgb(1,8,6);
 background: radial-gradient(circle, rgba(1,8,6,1) 59%, rgba(144,139,139,1) 100%);
+}
+
+.box{
+  padding: 30px;
 }
 
 .headshot{
@@ -13,13 +17,27 @@ background: radial-gradient(circle, rgba(1,8,6,1) 59%, rgba(144,139,139,1) 100%)
   margin-left: 10vw;
 }
 
-.nav{
+.nav {
   position: fixed;
   display: flex;
   justify-content: center;
+  background: rgb(1,8,6);
+  background: linear-gradient(0deg, rgba(1,8,6,1) 59%, rgba(144,139,139,1) 100%);
+  width: 100%;
   
 }
 
+
+
+.nav a{
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav a:hover{
+  cursor: pointer;
+}
 .connect{
   text-align: center;
   margin-top: 70px;
@@ -33,6 +51,15 @@ background: radial-gradient(circle, rgba(1,8,6,1) 59%, rgba(144,139,139,1) 100%)
 .title{
   color: rgb(247, 242, 247);
   text-align: center;
+}
+
+
+
+.button{
+  background-color: transparent;
+  border: none;
+  float: left;
+  cursor: pointer;
 }
 
 .name{
@@ -115,6 +142,11 @@ ul {
   margin-right: 100px;
 }
 
+.connect{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .iconconnect{
   padding: 5px;
   margin: 10px;
@@ -130,21 +162,103 @@ ul {
   transition: 0.5s;
 }
 
-.projectsicon{
-  width: 250px;
-  height: 175px;
-  border-radius: 30px;
-  margin: 10px;
-}
-
-.projectsicon:hover{
-  width: 300px;
-  height: 225px;
-  border-radius: 100px;
-  transition: 0.5s;
-  transition-timing-function: ease-in;
-}
 
 h3{
   text-decoration: none;
+}
+
+.parent{
+  position: relative;
+}
+
+.child{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: rgb(218, 10, 10);
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.child:hover{
+  width: 150px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.7;
+}
+
+.thumbnail{
+  width: 250px;
+  height: 175px;
+  border-radius: 30px;
+  position: relative;
+ 
+}
+
+.thumbnail:hover{
+  width: 275px;
+  height: 200px;
+  transition: 0.5s;
+
+}
+
+.projcontainer{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+  
+}
+
+.photo{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
+
+
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 10px;;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.overlay > *{
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.overlay:hover > *{
+  transform: translateY(0);
+}
+
+.overlay:hover{
+  opacity: 1;
+
+}
+
+.description{
+  font-size: 2em;
+  font-weight: bold;
 }

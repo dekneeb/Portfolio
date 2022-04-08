@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App" id='home'>
         <Nav/>
+        <div class='box'>
         <h3 className='header'> Hello World, my name is</h3>
      <h1 className='firstname'> Denee Boyd </h1>
      <h2 className='slogan'> I build things for the web.</h2>
@@ -19,7 +20,7 @@ function App() {
      <Project/>
      <Connect/>
       <p>Built with React || Hosted on Netlify</p>
-      
+      </div>
     </div>
   );
 }
